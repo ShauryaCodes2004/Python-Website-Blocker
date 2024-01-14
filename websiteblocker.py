@@ -31,7 +31,7 @@ def block(answer):
 			#adding the urls from DB in hosts file and adding redirection to localhost to make them inaccessible
 			for url in sites_to_be_blocked:
 				if url not in hosts:
-					hostentry.write(redirect+' '+url+'\n')
+					hostentry.write(redirect+' '+url+'\l')
 		try:
 			time.sleep(50)
 		except KeyboardInterrupt:
